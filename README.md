@@ -1,8 +1,8 @@
-# 🧑‍💼 Employee Management Dashboard
+# Employee Management Dashboard
 A **secure, full-stack Employee Management Dashboard** built using the **MERN stack (MongoDB, Express.js, React.js, Node.js)**.
 The application enables efficient employee data management, secure document handling, real-time analytics, and server-side filtering, while adhering to **OWASP security best practices**.
 
-## 📌 Features Overview
+## Features Overview
 * Full **CRUD operations** for employee records
 * **Secure file uploads** with AES-256 encryption for resumes
 * **Server-side filtering** (department, gender, joining date, search)
@@ -10,7 +10,7 @@ The application enables efficient employee data management, secure document hand
 * **Dark Mode** with consistent UI theming
 * **OWASP-compliant backend security framework**
 
-## 🏗️ System Architecture
+## System Architecture
 The application follows a **modern client–server architecture**, ensuring separation of concerns, scalability, and maintainability.
 ```
 React Frontend (SPA)
@@ -35,7 +35,7 @@ MongoDB Atlas (Cloud Database)
 * **Database**
   MongoDB Atlas for persistent storage of employee records and encrypted file metadata.
 
-## 🧰 Technology Stack
+## Technology Stack
 
 ### Frontend
 * **React.js** – Component-based UI, hooks (`useState`, `useEffect`)
@@ -59,7 +59,7 @@ MongoDB Atlas (Cloud Database)
 * **CORS** – Controlled cross-origin access
 * **Helmet** – Secure HTTP headers
 
-## 🔐 Security Highlights (OWASP-Aligned)
+## Security Highlights (OWASP-Aligned)
 Security is a first-class concern in this project.
 
 ### Implemented Protections
@@ -80,7 +80,7 @@ Security is a first-class concern in this project.
 | Malicious File Uploads | Whitelisting + encryption                |
 | Misconfiguration       | Secure headers, dotenv, updated packages |
 
-## 🔁 Data Flow (End-to-End)
+## Data Flow (End-to-End)
 1. **User submits employee data** from React frontend
 2. **Axios sends multipart/form-data** request
 3. **Express API validates inputs**
@@ -89,17 +89,17 @@ Security is a first-class concern in this project.
 6. **MongoDB stores employee record & encrypted paths**
 7. **Frontend re-renders updated state**
 
-## 📊 Analytics Dashboard
+## Analytics Dashboard
 * Real-time **department-wise employee distribution**
 * Interactive **pie chart visualization**
 * Dynamic updates without page refresh
 
-## 🌗 Dark Mode Support
+## Dark Mode Support
 * Seamless toggle between light & dark themes
 * Accessibility-friendly contrast ratios
 * Consistent styling across all components
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 * Node.js (v16+)
@@ -138,15 +138,4 @@ npm install
 npm start
 ```
 
-## 🧪 Testing & Validation
-* Manual API testing with invalid payloads
-* Malicious file upload attempts rejected
-* Encryption verified via binary inspection
-* `npm audit` confirms no vulnerable dependencies
 
-## 📈 Future Enhancements
-* Role-Based Access Control (RBAC)
-* JWT Authentication
-* Rate-limiting middleware
-* Resume decryption on-demand
-* Audit logs & admin dashboard
